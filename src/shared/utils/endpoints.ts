@@ -1,8 +1,8 @@
 
-const BASE_URL = 'https://api.github.com/';
+const BASE_URL = 'https://dummyjson.com/';
 
 const ENDPOINTS = {
-    SEARCHUSER:"search/users",
+    LOGIN:"auth/login",
     USER:"users/",
 
 };

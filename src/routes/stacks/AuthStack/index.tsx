@@ -1,14 +1,12 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {StatusBar} from 'react-native';
-import HomeScreen from '../../../screens/Home';
 import { ROUTES } from '../../../shared/utils/routes';
-import DetailScreen from '../../../screens/Detail';
-import FollowUsers from '../../../screens/FollowUsers';
+import LoginScreen from '../../../screens/Login';
 
 const Stack:any = createStackNavigator();
 
-const HomeStack = () => {
+const AuthStack = () => {
   return (
     <>
       <StatusBar
@@ -18,12 +16,13 @@ const HomeStack = () => {
       />
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen
-          name={ROUTES.HOME}
-          component={HomeScreen}
+          name={ROUTES.LOGIN}
+          component={LoginScreen}
         />
+
       </Stack.Navigator>
     </>
   );
 };
 
-export default HomeStack;
+export default AuthStack;

@@ -13,7 +13,7 @@ import { LogBox } from 'react-native';
 const App = () => {
   useEffect(()=>{
     initialConfig();
-    LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
+    LogBox.ignoreLogs(['Warning: ...']);
     LogBox.ignoreAllLogs();
   },[])
   return (

@@ -7,7 +7,6 @@ import { navigate } from '../../services/nav.services';
 import { ROUTES } from '../../utils/routes';
 
 const UserCard = ({item}: any) => {
-  // console.log("-item--->",item);
   const {avatar_url, login} = item;
   return (
     <Pressable onPress={()=>{
